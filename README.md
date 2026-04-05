@@ -35,13 +35,5 @@ Sebelum menjalankan proyek ini, pastikan kamu sudah menginstal:
    Jalankan server Flask:
    python app.py
    Buka browser dan akses: http://127.0.0.1:5000
-   
-5.**Struktur Folder**
-   Music-Downloader/
-    ├── .venv/               # Virtual Environment
-    ├── downloads/           # Folder hasil unduhan (Temporary)
-    ├── static/              # File CSS & JS
-    ├── templates/           # File HTML (index.html)
-    ├── app.py               # Main Logic Flask
-    └── README.md            # Dokumentasi Proyek
+
 
