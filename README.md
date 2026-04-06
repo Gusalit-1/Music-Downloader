@@ -1,39 +1,59 @@
-# AudioGrab - YouTube Music Downloader 🎵
+# 🎵 Music Downloader & Audio Processor
 
-Aplikasi berbasis web sederhana untuk mengunduh audio dari YouTube dalam format MP3 atau WAV menggunakan **Flask** dan **yt-dlp**. Proyek ini dikembangkan sebagai bagian dari pembelajaran pengembangan perangkat lunak dan implementasi library Python.
+[![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/)
+[![Framework](https://img.shields.io/badge/framework-Flask-lightgrey.svg)](https://flask.palletsprojects.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🚀 Fitur
-- Unduh audio langsung dari URL YouTube.
-- Pilihan format output: **MP3** atau **WAV**.
-- Proses konversi otomatis menggunakan **FFmpeg**.
-- Tampilan antarmuka yang bersih dengan **Tailwind CSS**.
+**Music Downloader** adalah aplikasi berbasis Web (Flask) yang dirancang untuk mengunduh audio dari berbagai platform dan melakukan pemrosesan awal (preprocessing) agar kompatibel dengan model AI Detection. Project ini merupakan bagian dari sistem pendukung untuk **Tugas Akhir di ITB STIKOM Bali**.
 
-## 🛠️ Prasyarat
-Sebelum menjalankan proyek ini, pastikan kamu sudah menginstal:
-- [Python 3.10+](https://www.python.org/)
-- [FFmpeg](https://ffmpeg.org/download.html) (Wajib ada di PATH sistem)
+---
 
-## 📦 Instalasi
+## 🚀 Fitur Utama
+* **High-Quality Download:** Mengunduh audio dengan format terbaik menggunakan engine `yt-dlp`.
+* **Auto-Conversion:** Mengonversi hasil unduhan langsung ke format `.wav` (Lossless) agar akurasi deteksi AI lebih maksimal.
+* **Simple Dashboard:** Antarmuka web yang bersih dan mudah digunakan.
+* **Integrated Workflow:** Hasil unduhan dapat langsung digunakan sebagai input untuk model **AudioLens AI**.
 
-1. **Clone repositori ini:**
+---
+
+## 🛠️ Arsitektur Teknologi
+Aplikasi ini dibangun menggunakan *stack* teknologi berikut:
+* **Backend:** Python 3.11 & Flask
+* **Engine Unduh:** yt-dlp
+* **Processing:** Librosa & FFmpeg
+* **Frontend:** HTML5, CSS (Tailwind), dan JavaScript (Fetch API)
+
+
+
+---
+
+## 📋 Prasyarat Sistem
+Sebelum menjalankan aplikasi, pastikan perangkat Anda sudah terinstal:
+1. **Python 3.11** (Sangat disarankan untuk stabilitas library).
+2. **FFmpeg** (Wajib terinstal di sistem PATH untuk proses konversi audio).
+
+---
+
+## ⚙️ Cara Instalasi
+
+1. **Clone Repository**
    ```bash
    git clone [https://github.com/Gusalit-1/Music-Downloader.git](https://github.com/Gusalit-1/Music-Downloader.git)
    cd Music-Downloader
+2. **Buat & Aktifkan Virtual Environment**
+3. **Instal Library yang Dibutuhkan**
 
    
-2. **Buat dan aktifkan Virtual Environment:**
-  PowerShell
-   python -m venv .venv
-   .\venv\Scripts\activate
-   
-3.**Instal library yang dibutuhkan:**
-   Bash
-   pip install flask yt-dlp
-   
-4.**Cara Menjalankan**
-   Pastikan venv sudah aktif.
-   Jalankan server Flask:
-   python app.py
-   Buka browser dan akses: http://127.0.0.1:5000
+## 🏃 Cara Menjalankan
+1. **Jalankan server Flask:**
+2. **Buka browser dan akses:**
+3. **Masukkan link musik, klik download, dan file akan tersimpan di folder downloads/.**
 
-
+## 📂 Struktur Folder
+Music-Downloader/
+├── app.py              # Logika Backend Flask
+├── static/             # File CSS & JavaScript
+├── templates/          # Tampilan HTML (index.html)
+├── downloads/          # Tempat penyimpanan hasil unduhan (ignored)
+├── .gitignore          # File pengecualian Git
+└── README.md           # Dokumentasi Project
