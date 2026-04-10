@@ -4,7 +4,7 @@
 [![Framework](https://img.shields.io/badge/framework-Flask-lightgrey.svg)](https://flask.palletsprojects.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Music Downloader** adalah aplikasi berbasis Web (Flask) yang dirancang untuk mengunduh audio dari berbagai platform dan melakukan pemrosesan awal (preprocessing) agar kompatibel dengan model AI Detection. Project ini merupakan bagian dari sistem pendukung untuk **Tugas Akhir di ITB STIKOM Bali**.
+**Music Downloader** adalah aplikasi berbasis Web (Flask) yang dirancang untuk mengunduh audio dari berbagai platform dan melakukan pemrosesan awal (preprocessing) agar kompatibel dengan model AI Detection.
 
 ---
 
